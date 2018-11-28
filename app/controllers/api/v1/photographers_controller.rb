@@ -1,5 +1,5 @@
 class Api::V1::PhotographersController < ApplicationController
-
+    skip_before_action :authorized, only: [:index, :show]
     before_action :find_photograph, only: [:show]
     def index
       @photographers = Photographer.all
