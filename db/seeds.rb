@@ -115,3 +115,9 @@ puts "creating images"
   end
 
 puts "done with images"
+
+########################      Order #######################
+
+
+Order.new(user_id: User.first.id, photographer_id: Photographer.first.id, date: Date.new(
+rand(1950..2010), rand(1..12), rand(1..29)))

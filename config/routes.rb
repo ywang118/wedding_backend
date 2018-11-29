@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :photographers
       resources :images
       resources :users, only: [:create, :update]
+      resources :orders, only: [:index, :create, :destroy]
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
     end
