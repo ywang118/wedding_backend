@@ -1,11 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2018-12-01
   user_id: 1
   photographer_id: 1
 
 two:
-  date: 2018-12-01
   user_id: 1
   photographer_id: 1
